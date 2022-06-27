@@ -75,6 +75,8 @@ Keycloak is our default authentication service (as we follow microservices archi
 
 Once the keycloak server is started, you can access it by visiting [http://0.0.0.0:8080](http://0.0.0.0:8080).
 
+To import a sample predefined realm, use: https://github.com/reckonsys/keycloak/blob/main/reckonsys-sample-realm-export.js
+
 Be sure to use the correct public key in your [settings.py](https://github.com/reckonsys/backend/blob/develop/backend/settings.py) from the keycloak's realm that you are using.
 
 ```py
