@@ -109,3 +109,7 @@ We use AWS CoPilot / Kubernetes for production.
 ## [keycloak](https://github.com/reckonsys/keycloak)
 
 Contains the base configurations for keycloak authentication service.
+
+# tmuxp configuration
+
+We typically tend to use [tmuxp](https://github.com/tmux-python/tmuxp) to manage / switch between different projects here are Reckonsys. The included [tmuxp.yml](tmuxp.yml) configuration file has all the services that are mentioned so for. It is included here for reference purposes. It is not necessary for you to use tmuxp.
