@@ -1,10 +1,4 @@
-# Wiki
-
-Wiki
-
-[Checkout template repositories](https://github.com/orgs/reckonsys/repositories?type=template) 
- 
-## Tools
+# Tools
 
 Before running any backend / frontend code, please make sure that the following services are all installed:
 
@@ -23,7 +17,7 @@ With that being said, KeyCloak is not available on HomeBrew. You can docnload th
 brew install mailhog postgresql redis minio docker docker-compose docker-machine
 ```
 
-### MailHog
+## MailHog
 
 Start the MailHog server using the command `MailHog` on your terminal.
 
@@ -41,7 +35,7 @@ EMAIL_USE_SSL = env("EMAIL_USE_SSL", "0") == "1"
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 ```
 
-### Minio
+## Minio
 
 Start the minio server using the command `minio server ~/data/minio` on your terminal. if the `~/data/minio` folder exists, please create it manually. 
 
@@ -63,11 +57,11 @@ else:
     AWS_S3_ENDPOINT_URL = None
 ```
 
-### Redis
+## Redis
 
 During development we may use redis as celery broker / for socket server. But during deployment we may choose to use AWS SQS / RabbitMQ for celery broker.
 
-### Keycloak
+## Keycloak
 
 start the keycloak server using the command `bin/kc.sh start-dev --spi-theme-static-max-age=-1 --spi-theme-cache-themes=false --spi-theme-cache-templates=false` from the folder when you extracted it.
 
