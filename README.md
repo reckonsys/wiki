@@ -79,3 +79,33 @@ KEYCLOAK_PUBLIC_KEY = env(
     "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4SvPRqJJA5O//iTg8/+BiCOZB2c0lK8TQ8plfem3md+OFhNC0d21Uzq8PGOSP/BrU/xeqg0DHvlzcriOTC0ZwceP0isIjUNHz1+sRRVPt69b/+HM331IGkuqTs4qk76ExTD4IMZ3nv0GHsKHZCOanRTSbqQTMaDaW3casXkFQyOYhyEbBu3atFZ+vWtMUkgFJ9wgHSOhWdJkX2JxzR65y/BgiJUtocn7YprKLxEKjHk4b+gLGPE017O81ooInbgH2XcZjxsG/S3Rpw4TSOh/6mpBCYb1YTYT3GzpVCoQ5K+AzEoo+eR+jp1zhe4GgZWLHpPgkKoOVvO7m3+FPXHvWwIDAQAB",  # noqa:E501
 )
 ```
+
+# Repositories
+
+When starting a new project, create repositories from these [template repositories](https://github.com/orgs/reckonsys/repositories?type=template)
+
+Once the repositories are created from the above mentioned template repositories, make sure all the repositories are cloned in the same directory. This is required because there are some actions (like exporting CHOICES.js and schema.graphql, or deploying the frontend code) that assumes that all the repositoris are cloned in the same parent directory by default.
+
+The README of each of these repositories contain the details docs on setting up and trouble shooting.
+
+## [Wiki](https://github.com/reckonsys/wiki)
+
+This template (the current repo that you are looking at) has some docs related to initial setup.
+
+## [backend](https://github.com/reckonsys/backend)
+
+This repo contains the base Django/GraphQL boilerplate.
+
+## [frontend](https://github.com/reckonsys/frontend)
+
+This repo contains the base React/Realy boilerplate.
+
+## [bigga](https://github.com/reckonsys/bigga)
+
+Just a tertraform & docker-compose configuration to run dev/beta workloads.
+
+We use AWS CoPilot / Kubernetes for production.
+
+## [keycloak](https://github.com/reckonsys/keycloak)
+
+Contains the base configurations for keycloak authentication service.
